@@ -1,9 +1,11 @@
-import { Router } from 'express';
-import apiRoutes from '';
+import { Router } from "express";
+import apiRoutes from "./api/index.js";
+import authRoutes from "./auth-routes.js";
 
 const router = Router();
 
-router.use('/api', apiRoutes);
+router.use("/auth", authRoutes);
+router.use("/api", apiRoutes);
 
 export default router;
 // activyt 14.3.insmodels

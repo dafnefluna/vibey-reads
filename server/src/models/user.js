@@ -13,8 +13,8 @@ export function UserFactory(sequelize) {
   User.init(
     {
       id: {
-        type: DataTypes.STRING,
-        allowNull: false,
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
         primaryKey: true,
       },
       username: {
