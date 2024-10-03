@@ -1,7 +1,8 @@
 import { Router } from "express";
 import fetch from "node-fetch";
 import { mapGoogleBooksData } from "../../utils/dataMapping.js"; // Adjusted import path
-
+import dotenv from 'dotenv';
+dotenv.config();
 const router = Router();
 
 router.get("/health", (req, res) => {
