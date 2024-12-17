@@ -31,9 +31,15 @@ function NavBar() {
           {isAuthenticated ? (
             <Nav className="ms-auto">
               {/* <Link to="/profile"> */}
-                <Nav.Link to="/profile">Profile</Nav.Link>
+              <Link to='/profile'>
+              Profile
+              </Link>
+                {/* <Nav.Link to="/profile">Profile</Nav.Link> */}
               {/* </Link> */}
-              <Button onClick={() => handleLogout()}>Logout</Button>
+              <Link onClick = {() => handleLogout()}>
+              Logout
+              </Link>
+
             </Nav>
           ) : (
             <Nav className="ms-auto">
