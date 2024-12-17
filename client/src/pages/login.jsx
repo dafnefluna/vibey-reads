@@ -1,6 +1,10 @@
 // todo: login logic
 // todo: sign-up logic
 // what needs to populate here: logo, 1 form for login with a login button, the login button will take you to th homepage, a sign-up botton will start the process of a sign-up form either in popup or another page. on finish sign-up they will go back to log-in
+// note: 12/17 when login attemp, we get a console POST error 401 that the password does not match, its likley a token authentication issue
+// note: the input content is being overwritten by the css the red color
+// note: you cant actually use the app when youre logged in, you have to be logged out to use the functionalities
+
 import React, { useState, useContext } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";

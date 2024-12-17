@@ -1,5 +1,7 @@
 import fetch from 'node-fetch';
 //import Music from '../models/music.js'; // Import the Music model
+import { mapSpotifyCategoriesData } from '../utils/dataMapping';
+
 
 const genreToMusicCategory = {
     fiction: ['chill', 'indie', 'acoustic'],
@@ -57,9 +59,7 @@ export async function fetchPlaylistsByGenres(genres) {
                         description: playlist.description,
                         name: playlist.name,
                     }));
-
                     playlists.push(...extractedPlaylistData);
-
                 }
             }
         }

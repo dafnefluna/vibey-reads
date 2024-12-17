@@ -1,3 +1,4 @@
+// note: this file on 12/17 shows error page not found 400, 
 // this file is the cards that render the recommendations for the user after we get a a response from the backend with Spotify and Google
 import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';

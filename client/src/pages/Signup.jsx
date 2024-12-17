@@ -3,6 +3,11 @@ import { Link, useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
+// note: console error on this 12/17
+// note: when you type in to register, the colors overriding the input field and hiding the input
+// note: the information for registration is being saved in the our DB
+// note: once you hit register it is not redirection to the profile page or login
+
 const Signup = () => {
   const navigate = useNavigate();
 

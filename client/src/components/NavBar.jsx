@@ -7,6 +7,8 @@ import { UserContext } from "../App";
 import { Link } from "react-router-dom";
 import logo from "../assets/VibeyReadsLogo.png";
 
+// note: 12/17 the profile button on nav doesnt go anywhere when you click on it
+
 function NavBar() {
   const { isAuthenticated, setIsAuthenticated } = useContext(UserContext);
   useEffect(() => {

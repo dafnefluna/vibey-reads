@@ -4,6 +4,8 @@
 // each book and each playlist is a card and each card will have a button to save or pass, it will have all the details of each
 // There will be a button that says create vibe and the user has to pick one book and one playlist only. When they click on it they will be able to name this vibe and then rerouted back to homepage
 // The name of the vibe and the book will show in the colums on home page for reference.
+// note: would be nice to control the clicks so its not flooding the query
+// note: the submit button doesnt reroute to anything needs to reoute to the showing books and music
 
 import React, { useState, useEffect } from "react";
 import { Container, Form, Button, Card, Row, Col, ListGroup, ListGroupItem } from "react-bootstrap";
