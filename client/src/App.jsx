@@ -1,32 +1,18 @@
-import { useState, useEffect, createContext } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from "./pages/login";
-import Signup from "./pages/Signup";
-import NavBar from "./components/NavBar";
-import "./App.css";
-import Profile from "./pages/Profile.jsx";
-
+import { useState, createContext } from "react";
+import { Outlet } from 'react-router-dom';
+import NavBar from './components/NavBar';
 export const UserContext = createContext();
+
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-
+  // The Outlet component will conditionally swap between the different pages according to the URL
   return (
-    <div>
+    <>
       <UserContext.Provider value={{ isAuthenticated, setIsAuthenticated }}>
-        <BrowserRouter>
-          <NavBar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/profile" element={<Profile />} />
-          </Routes>
-        </BrowserRouter>
+      <NavBar />
+      <Outlet />
       </UserContext.Provider>
-      {/* <App1 /> */}
-    </div>
+    </>
   );
 }
-
 export default App;

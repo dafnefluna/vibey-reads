@@ -1,15 +1,12 @@
 import React from 'react';
-import './Header.css'; // Import CSS for styling
 
-const Header = () => {
+const Header = ({username}) => {
   return (
     <header className="header">
-      <h1>Vibey Reads</h1>
+      <h2></h2>
       <nav>
         <ul>
-        <li><a href="/">What's your Vibe?</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+        <li>Welcome, ({username})!</li> 
         </ul>
       </nav>
     </header>

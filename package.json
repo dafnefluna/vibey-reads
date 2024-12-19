@@ -15,7 +15,7 @@
     "server:build": "cd server && npm run start",
     "seed": "cd server && npm run seed",
     "render-build": "npm install && npm run client:build",
-    "render-start": "node server/src/server.js"
+    "render-start": "npm run client:build && node server/src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -29,11 +29,10 @@
     "bcrypt": "^5.1.1",
     "bootstrap": "^5.3.3",
     "jsonwebtoken": "^9.0.2",
-
     "pg": "^8.13.0",
     "pg-hstore": "^2.3.4",
-
     "react-bootstrap": "^2.10.4",
+    "react-draggable": "^4.4.6",
     "sequelize": "^6.37.3"
   }
 }
